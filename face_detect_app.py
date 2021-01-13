@@ -14,7 +14,7 @@ class DetectFace(object):
         # grab single frame of video
         ret, frame = self.cap.read()
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        faces = face_cascade.detectMultiScale(gray, 1.3, 4)
+        faces = face_cascade.detectMultiScale(gray, 1.2, 4)
 
         for (x, y, w, h) in faces:
             cv2.rectangle(frame, (x,y), (x+w, y+h), (250, 0, 0), 2)
