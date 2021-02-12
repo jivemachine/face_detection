@@ -1,2 +1,4 @@
-opencv-python-headless==4.4.0.46
-flask==1.0.2
+opencv-python==4.4.0.46
+flask
+flask-restful
+gunicorn
